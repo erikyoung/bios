@@ -19,6 +19,10 @@
  }
 
  .hero {
- 		background-image: url('/images/flag.jpg') no-repeat;
- 		width: 100%;
+ 		background: image_url('/images/flag.jpg') no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	 	height: 370px;
  }
