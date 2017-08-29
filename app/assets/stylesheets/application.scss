@@ -42,3 +42,24 @@
 
  }
 
+.booyah-box {
+  -moz-box-shadow: 2px 2px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 2px 2px 2px 2 #d0d0d0;
+  box-shadow: 2px 2px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin: 40px 40px 40px 40px;
+  padding:10px;
+  border-radius:0;
+  -moz-box-shadow: 2px 1px 10px 4px rgba(0,0,0,0.47);
+  -webkit-box-shadow: 2px 1px 10px 4px rgba(0,0,0,0.47);
+  padding-bottom: 20px;
+  
+ }
+
+ .btn3d.btn-info {
+    box-shadow:0 0 0 1px #00a5c3 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #348FD2, 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#39B3D7;
+}
+
