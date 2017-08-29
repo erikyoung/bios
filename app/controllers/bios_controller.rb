@@ -15,12 +15,16 @@ class BiosController < ApplicationController
 
 	def create
 		@bio = Bio.new(params[:id])
-		if @bio.save
+		if @bio
 			flash[:success] = "Your bio was created"
-			redirect_to @bio
+			redirect_to root_path
 		else
-			render :new, status: :unprocessable_entity
+			flash.now[:error] = "Dude, it didn't save"
+			render 'new'
 		end
+	else
+		flash.now[:error] = "User not found"
+		redirect_to action: 'new', show_hint: true
 	end
 
 
