@@ -1,16 +1,10 @@
 @import "bootstrap";
 
- 
-
- 
 
  body {
  	font-family: 'Permanent Marker', cursive;
- 	background-color: #fff; 
-	background-image: 
-	linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
-	linear-gradient(#eee .1em, transparent .1em);
-	background-size: 100% 1.2em;
+ 	background-color: #cc1c25;
+ 	max-width: 100%;
  }
 
  h2 {
@@ -21,12 +15,30 @@
  }
 
  .hero {
+ 		-webkit-box-shadow: 3px 9px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 3px 9px 5px 0px rgba(0,0,0,0.75);
+		box-shadow: 3px 9px 5px 0px rgba(0,0,0,0.75);
  		background: image_url('flag.jpg') no-repeat center center fixed;
- 		background-size:100%;
+ 		background-size:cover;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;
 	 	height: 370px;
+	 	-webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+ }
+
+ .index_content {
+ 	position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+
  }
 
