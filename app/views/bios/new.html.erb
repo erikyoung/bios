@@ -1,1 +1,15 @@
-<h1>howdy</h1>
+<div class="col-xs-10 col-xs-offset-1" %> 
+<h1> Add a Cool Person </h1>
+
+<%= simple_form_for @bio do |f| %>
+		<%= f.input :name, placeholder: "Enter Your Name" %>
+		<%= f.input :age, "What's Your Age?" %>
+		<%= f.input :description, placeholder: "Describe Yourself" %>
+		<%= f.input :hometown, placeholder: "Where you from?" %> 
+		<%= f.input :hobbies, placeholder: "What are your hobbies?" %> 
+		<br />
+<%= f.submit 'Add a person', class: 'btn btn-primary' %> 
+<% end %> 
+
+
+
