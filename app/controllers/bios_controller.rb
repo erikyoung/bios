@@ -14,11 +14,14 @@ class BiosController < ApplicationController
 	end
 
 	def create
-		@bio = Bio.find(params[:id])
-		
-
+		@bio = Bio.new(params[:id])
+		if @bio.save
+			flash[:success] = "Your bio was created"
+			redirect_to @bio
+		else
+			render :new, status: :unprocessable_entity
+		end
 	end
-
 
 
 	private
