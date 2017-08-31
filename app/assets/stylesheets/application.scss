@@ -4,31 +4,37 @@
  body {
  	font-family: 'Permanent Marker', cursive;
  	background-color: #cc1c25;
- 	max-width: 100%;
-  
+ 	max-width: 100%; 
 }
 
  h2 {
  	text-align: center;
  	color: white;
  	font-size: 2.5em; 
- 	
+   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;	
  }
 
+ .feature {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+ h1, h2, h3, h4, h5, h6, .navbar {
+  margin: 0;
+}
+
  .hero {
+    background: image_url('flag.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 370px;
  		-webkit-box-shadow: 3px 9px 5px 0px rgba(0,0,0,0.75);
 		-moz-box-shadow: 3px 9px 5px 0px rgba(0,0,0,0.75);
 		box-shadow: 3px 9px 5px 0px rgba(0,0,0,0.75);
- 		background: image_url('flag.jpg') no-repeat center center fixed;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
- 		background-size:100%;
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-	 	height: 370px;
+ 		background-size: 100% 100%;
 	 	-webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
@@ -60,11 +66,20 @@
   -moz-box-shadow: 2px 1px 10px 4px rgba(0,0,0,0.47);
   -webkit-box-shadow: 2px 1px 10px 4px rgba(0,0,0,0.47);
   padding-bottom: 20px;
-  
+
  }
 
  .btn3d.btn-info {
     box-shadow:0 0 0 1px #00a5c3 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #348FD2, 0 8px 8px 1px rgba(0,0,0,0.5);
     background-color:#39B3D7;
 }
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 2.5em;
+}
+
+
+
+
 
