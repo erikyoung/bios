@@ -10,28 +10,43 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-toggleable-md navbar-light bg-primary">
-    <%= link_to 'Hero App', root_path, class: 'navbar-brand' %>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="navbar-brand" href="#">Hidden brand</a>
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+    <nav class="navbar navbar-custom" role="navigation">
+  <div class="container-fluid">
+   
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle colapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <%= link_to 'Hero App', root_path, class: 'navbar-brand' %>
       </div>
-    </nav>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul class="nav navbar-nav">
+    <li>
+      <%= link_to new_bio_path do %>
+      <i class="glyphicon glyphicon-plus-sign"></i>
+      New Hero
+      <% end %>
+    </li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right">
+    <% if user_signed_in? %>
+        <li><%= link_to 'My Profile', user_path(current_user) %></li>
+        <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to 'Sign in', new_user_session_path %></li>
+        <li><%= link_to 'Sign up', new_user_registration_path %></li>
+      <% end %>
+    <li><a href="#">Link</a></li>
+  </ul>
+</div><!-- /.navbar-collapse -->
+</nav>
+
 
 
 
