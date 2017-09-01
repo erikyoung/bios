@@ -111,6 +111,22 @@
    box-shadow: 0px 1px 3px #2a2a2a;
 }
 
+.navbar-collapse {
+  background: image_url('superman.png');
+   background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;   
+}
+
+.navbar-toggle {
+  background: image_url('superman.png');
+  background-size:     cover;                      
+  background-repeat:   no-repeat;
+  background-position: center center; 
+  width: 30px;
+  height: 30px;
+}
+
 
 
 
