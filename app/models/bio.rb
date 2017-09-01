@@ -5,5 +5,6 @@ class Bio < ApplicationRecord
 	validates :hometown, :presence => true
 	validates :hobbies, :presence => true
 
-	has_many :bios
+	
+	belongs_to :user
 end
