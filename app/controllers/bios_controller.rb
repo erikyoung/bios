@@ -1,8 +1,8 @@
 class BiosController < ApplicationController
-	
+	before_action :authenticate_user!, only: [:new, :create]
 
 	def index
-		bios = Bio.all
+		@bios = Bio.all
 	end
 
 	def new
@@ -14,22 +14,14 @@ class BiosController < ApplicationController
 	end
 
 	def create
-		@bio = current_user.bios.create(bio_params)
-		if @bio.valid?
-			flash[:success] = "Your bio was created"
-			redirect_to root_path
-		else
-			flash.now[:error] = "Dude, it didn't save"
-			render 'new', status: :unprocessable_entity
-			
+		current_user.bios.create(bio_params)
+		redirect_to root_path
 	end
-end
-
 
 
 	private
 
 	def bio_params
-		params.require(:bio).permit(:name, :age, :description, :hometown, :hobbies)
+		params.require(:bios).permit(:name, :age, :description, :hometown, :hobbies)
 	end
 end

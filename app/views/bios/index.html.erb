@@ -5,7 +5,7 @@
 			<p>Let's Name Them</p>
 			<%= link_to 'Add a Cool Person', new_bio_path, class: 'btn btn-info btn-lg btn3d' %> 
 		</div>
-
+  </div> 
 
 <br />
 <div class="row feature text-center">
@@ -22,6 +22,26 @@
     <h3>Feature 3</h3>
   </div>
 </div>
+
+<% @bios.each do |bio| %>
+<div class="booyah-box col-xs-4 col-xs-offset-1">
+  <h1><%= link_to bio.name, bio_path(bio) %></h1>
+  <p><%= bio.age %></p>
+  <p><%= bio.description %> 
+  <p><%= bio.hometown %></p>
+  <p><%= bio.hobbies %></p>
+
+  <% if bio.user.present? %>
+    <small><%= bio.user.email %></small>
+  <% end %> 
+  </div>
+<% end %> 
+
+
+
+
+
+
 
 
 
