@@ -8,3 +8,9 @@
 		<%= @bio.hobbies %> 
 </div>
 
+<div class="modal-body">
+       <%= simple_form_for @photo, :url => bio_photos_path(@bio) do |f| %>
+       <%= f.input :picture %>
+       <%= f.input :caption %>
+      </div>
+
