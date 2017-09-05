@@ -14,6 +14,7 @@ class BiosController < ApplicationController
 	end
 
 	def create
+		@bio = Bio.find_by(params[:id])
 		current_user.bios.create(bio_params)
 		redirect_to root_path
 	end

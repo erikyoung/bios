@@ -1,7 +1,7 @@
 
 	<div class="hero text-center"></div><br />
 		<div class="index_content">
-			<h2 >Awesome People are Hard To Find</h2>
+			<h2 class>Awesome People are Hard To Find</h2>
 			<p>Let's Name Them</p>
 			<%= link_to 'Add a Cool Person', new_bio_path, class: 'btn btn-info btn-lg btn3d' %> 
 		</div>
@@ -9,23 +9,21 @@
 <br />
 
 <h1 class="text-center">The Awesome Ones</h1>
-<% @bios.each do |bio| %>
-  <div class="container-fluid">
-    <div class="row">
-    <div class="booyah-box col-sm-4">
-      <h1><%= link_to bio.name, bio_path(bio) %></h1>
-      <p><%= bio.age %></p>
-      <p><%= bio.description %> 
-      <p><%= bio.hometown %></p>
-      <p><%= bio.hobbies %></p>
 
-      <% if bio.user.present? %>
-        <small><%= bio.user.email %></small>
-      <% end %> 
+
+  
+<div class="container">
+  <div class="row text-center">
+  <% @bios.each do |bio| %>
+    <div class="booyah-box col-md-4">
+      <h1><%= link_to bio.name, bio_path(bio) %></h1>
     </div> 
+    <% end %>
   </div>
-  </div>
-<% end %> 
+</div>
+ 
+  
+
 
 
 
