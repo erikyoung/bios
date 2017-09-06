@@ -17,22 +17,15 @@
   <% @bios.each do |bio| %>
     <div class="booyah-box col-md-4">
       <h1><%= link_to bio.name, bio_path(bio) %></h1>
+      <p><%= image_tag bio.picture_url(:thumb) unless bio.picture.blank? %></p> 
+      <p> <%= bio.caption %> </p>
+
     </div> 
     <% end %>
   </div>
 </div>
 
-<div class="container">
-  <h1>Photos</h1>
-  <br />
 
-  <% @bios.photos.each do |photo| %> 
-    <%= image_tag photo.picture %> 
-    <br />
-    <%= photo.caption %> 
-    <br />
-    <% end %> 
-</div>
  
   
 

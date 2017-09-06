@@ -1,19 +1,24 @@
-<div class="booyah-box col-xs-6 col-xs-offset-1" %> 
+<div class="new-hero col-xs-6 col-xs-offset-1" %> 
 <h1> Add a Cool Person </h1>
 
-<%= simple_form_for (@bio) do |f| %>
+<%= simple_form_for (@bio), :html => {:multipart => true} do |f| %>
 		<%= f.input :name, placeholder: "Enter Your Name" %>
 		<%= f.input :age, placeholder: "What's Your Age?" %>
 		<%= f.input :description, placeholder: "Describe Yourself" %>
 		<%= f.input :hometown, placeholder: "Where you from?" %> 
 		<%= f.input :hobbies, placeholder: "What are your hobbies?" %> 
-		<%= f.input :picture %>
+		<%= f.file_field  :picture %><br />
+		<br />
+		<%= f.input :caption, placeholder: "Describe Your Photo" %>
 		
 <%= f.submit 'Add a person', class: 'btn btn-info btn-lg btn3d' %> 
+
+</div>
 	
 <% end %> 
 
-</div>
+
+
 
 
 
