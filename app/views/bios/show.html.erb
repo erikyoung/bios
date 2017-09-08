@@ -6,7 +6,7 @@
 		<%= @bio.description %> 
 		<%= @bio.hometown %> 
 		<%= @bio.hobbies %> 
-		<%= @bio.photos %>
+		<%= image_tag(@bio.picture_url.to_s) %>
 		<%= @bio.caption %> 
 
 </div>

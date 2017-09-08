@@ -24,7 +24,7 @@ gem 'popper_js', '~> 1.11.1'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails'
 gem 'simple_form', '~> 3.5'
-gem "rmagick"
+gem "mini_magick"
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
