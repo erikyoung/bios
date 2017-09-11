@@ -16,9 +16,11 @@
   <div class="row text-center">
   <% @bios.each do |bio| %>
     <div class="booyah-box col-md-4">
-      <h1><%= link_to bio.name, bio_path(bio) %></h1>
       <p><%= image_tag bio.picture, :class => "picture" %></p> 
-      <p class="caption"> <%= bio.caption %> </p>
+      <div class="details">
+        <h1><%= link_to bio.name, bio_path(bio), :class => "name" %></h1>
+        <p class="caption"> <%= bio.caption %> </p>
+      </div>
 
     </div> 
     <% end %>

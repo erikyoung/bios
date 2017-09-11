@@ -102,6 +102,20 @@
   border-radius: 15px;
   text-decoration: none;
   font-size: 24px;
+  font-weight: bold;
+ }
+
+ .booyah-box .name {
+  color: #cc1c25;
+ }
+
+ .details {
+    height: 50%;
+    width: 90%;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+
  }
 
  .btn3d.btn-info {
