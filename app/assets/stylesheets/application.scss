@@ -68,20 +68,40 @@
  }
 
 .booyah-box {
-  -moz-box-shadow: 2px 2px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 2px 2px 2px 2 #d0d0d0;
-  box-shadow: 2px 2px 2px 0 #d0d0d0;
+  
+  box-shadow: 0 20px 20px rgba(0,0,0,0.5);
   background: #fff;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin: 60px 60px 60px 60px;
   padding:10px;
-  display: inline-block;
-  -moz-box-shadow: 2px 1px 10px 4px rgba(0,0,0,0.47);
-  -webkit-box-shadow: 2px 1px 10px 4px rgba(0,0,0,0.47);
   padding-bottom: 20px;
   height: 400px;
+  width: 300px;
+  box-sizing: border-box;
+  border-radius: hidden;
+  background-color: #1325ef;
 
+ }
+
+ .booyah-box .picture {
+  width: 100%;
+  padding-top: 20px;
+  box-shadow: 0 20px 20px rgba(0,0,0,0);
+
+
+ }
+
+ .booyah-box .caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 24px;
  }
 
  .btn3d.btn-info {
