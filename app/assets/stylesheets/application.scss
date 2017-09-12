@@ -83,7 +83,8 @@
   padding:10px;
   padding-bottom: 20px;
   height: 400px;
-  width: 300px;
+  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
   background-color: #1325ef;
 
@@ -99,18 +100,20 @@
  }
 
  .booyah-box .details {
-  
-    width: 100%;
+    max-width: 100%;
+    position: absolute;
     background: #9bd3ef;
     bottom: 0;
     box-shadow: 0 20px 20px rgba(0,0,0,0);
     padding-right:  20px;
     border: 1px solid #cc1c25;
     border-width: 5px;
-    margin: 20px 20px 20px 20px;
-
+    margin-right: 25px;
+    margin-bottom: 20px;
+    width: 95%;
 
  }
+
 
  .btn3d.btn-info {
     box-shadow:0 0 0 1px #00a5c3 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #348FD2, 0 8px 8px 1px rgba(0,0,0,0.5);
