@@ -98,6 +98,7 @@
 
  }
 
+
  .booyah-box .picture {
   width: 100%;
   padding-top: 20px;
@@ -121,6 +122,12 @@
  .btn3d.btn-info {
     box-shadow:0 0 0 1px #00a5c3 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #348FD2, 0 8px 8px 1px rgba(0,0,0,0.5);
     background-color:#39B3D7;
+}
+
+.btn3d.btn-info:hover {
+  background: #fff;
+  color: black;
+  box-shadow: inset 0 0 0 3px #3a7999;
 }
 
 .navbar-brand {
