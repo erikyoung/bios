@@ -1,17 +1,15 @@
 
 	<div class="hero text-center"></div><br />
 		<div class="index_content">
-			<h2 class>Awesome People are Hard To Find</h2>
-			<p>Let's Name Them</p>
+			<h2 class="awesome">Awesome People are Hard To Find</h2>
+			<p class="flex-box-fun">Let's Name Them</p>
 			<%= link_to 'Add a Cool Person', new_bio_path, class: 'btn btn-info btn-lg btn3d' %> 
 		</div>
   </div> 
 <br />
 
 <h1 class="title text-center ">The Awesome Ones</h1>
-
-
-  
+ 
 <div class="container">
   <div class="row text-center">
   <% @bios.each do |bio| %>
