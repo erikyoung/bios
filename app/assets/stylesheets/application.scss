@@ -98,17 +98,16 @@
 
  }
 
- .details {
-    
-    width: 360px;
+ .booyah-box .details {
+  
+    width: 100%;
     background: #9bd3ef;
-    position: absolute;
     bottom: 0;
     box-shadow: 0 20px 20px rgba(0,0,0,0);
-    margin-right: 10px;
-    padding:  20px;
-    border-box: black;
-    margin-bottom: 20px;
+    padding-right:  20px;
+    border: 1px solid #cc1c25;
+    border-width: 5px;
+    margin: 20px 20px 20px 20px;
 
 
  }
