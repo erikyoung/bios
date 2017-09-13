@@ -200,7 +200,22 @@
   width: 100%;
   padding: 20px 20px 20px 20px;
   box-shadow: 0 8px 6px -6px black;
- }
+  
+}
+ 
+ .hero-name {
+  z-index: 100;
+  position: absolute;
+  color: red;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px#888;
+  box-shadow: 0 0 5px #888;
+  padding: 10px 10px 10px 10px;
+  font-size: 24px;
+  font-weight: bold;
+  left: 150px;
+  top: 350px;
+ } 
 
  .show-page-pic:hover {
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
@@ -228,7 +243,7 @@
 }
 
  .details-show {
-  background-color: #fff;
+  
   margin: 10px 10px 10px 10px;
 
  }
@@ -236,15 +251,33 @@
  .details-show p {
     display: inline-block;
     padding: 10px 10px 10px 10px;
-    margin-right: 100px;
-    margin-left: 20px;
+    margin-right: 75px;
+    margin-left: 30px;
     font-size: 24px;
     font-weight: bold;
     color: #cc1c25;
+    background-color: #fff;
     box-shadow: inset horizontal vertical blur spread colour;
     box-shadow: 10px 10px;
     box-shadow: 10px 10px 5px #888;
  }
+
+ .collapse {
+    padding: 20px 20px 20px 20px;
+
+ }
+
+ .btn-info {
+  text-align: center;
+  display:block; /* change this from inline-block */
+    width:20%; /* setting the width */
+    margin:0 auto; /* this will center  it */
+    position:relative;
+ }
+
+ 
+
+
 
 
 

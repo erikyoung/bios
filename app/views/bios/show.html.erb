@@ -2,15 +2,24 @@
 	
 	
 	<div class="show-box col-xs-10 col-xs-offset-1">
-		<h3 class="text-center"><%= @bio.name %> </h3>
-		<p><%= image_tag(@bio.picture_url.to_s, class: 'show-page-pic') %></p>
+		<div class="name-position">
+			<p><%= image_tag(@bio.picture_url.to_s, class: 'show-page-pic') %></p>
+			<h3 class="hero-name"><%= @bio.name %></h3>
+		</div>
+		
 		<br />
-		<div class="details-show">
-			<p><%= @bio.age %></p>
-			<p><%= @bio.description %></p> 
-			<p><%= @bio.hometown %></p> 
-			<p><%= @bio.hobbies %></p> 
-		</div>	
+		<div class="container">
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Click To Learn More</button>
+  				<div id="demo" class="collapse">
+  				<div class="details-show">
+					<p><%= @bio.age %></p>
+					<p><%= @bio.description %></p> 
+					<p><%= @bio.hometown %></p> 
+					<p><%= @bio.hobbies %></p> 
+				</div>
+			</div>
+		</div>
+
 	
 
 
