@@ -15,7 +15,7 @@
   <% @bios.each do |bio| %>
     <div class="booyah-box col-md-4">
       <p><%= image_tag bio.picture, :class => "picture" %></p> 
-      <div class="details">
+      <div class="details col-md-4">
         <h1><%= link_to bio.name, bio_path(bio), :class => "name" %></h1>
         <p class="caption"> <%= bio.caption %> </p>
       </div>

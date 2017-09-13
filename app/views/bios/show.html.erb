@@ -1,11 +1,11 @@
 
-	<br />
-	<h1 class="heroes text-center">Heroes</h1><br />
+	
+	
 	<div class="show-box col-xs-10 col-xs-offset-1">
 		<h3 class="text-center"><%= @bio.name %> </h3>
 		<p><%= image_tag(@bio.picture_url.to_s, class: 'show-page-pic') %></p>
 		<br />
-		<div class="details">
+		<div class="details-show">
 			<p><%= @bio.age %></p>
 			<p><%= @bio.description %></p> 
 			<p><%= @bio.hometown %></p> 
