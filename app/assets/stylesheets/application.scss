@@ -87,9 +87,9 @@
   max-width: 100%;
   box-sizing: border-box;
   background-color: #1325ef;
+  cursor:pointer;
 
  }
-
 
  .booyah-box .picture {
   width: 100%;
@@ -273,6 +273,15 @@
     width:20%; /* setting the width */
     margin:0 auto; /* this will center  it */
     position:relative;
+ }
+
+ .btn-lg {
+  text-align: center;
+  display:block; /* change this from inline-block */
+    width:20%; /* setting the width */
+    margin:0 auto; /* this will center  it */
+    position:relative;
+    margin-top: 50px;
  }
 
  
