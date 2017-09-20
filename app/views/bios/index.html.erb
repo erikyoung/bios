@@ -31,7 +31,7 @@
        <h5 class="modal-title" id="exampleModalLabel">Characteristics</h5>
       <div class="ratings">
           <%= f.label :strength %>
-        <div class="attribute">
+        <div class="review-rating">
           <%= f.number_field :rating %> 
         </div>
          <%= f.label :endurance %>
@@ -54,6 +54,19 @@
 
       <% end %> 
  </div>
+
+ <script>
+   $.('.review-rating').raty({
+    readOnly: true,
+    score: function() {
+      return $(this).attr('data-score');
+    },
+    path: /assets/
+
+  });
+   
+
+ </script>
    
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
