@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170906155436) do
+ActiveRecord::Schema.define(version: 20170920173250) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,12 @@ ActiveRecord::Schema.define(version: 20170906155436) do
     t.integer "user_id"
     t.string "picture"
     t.string "caption"
+    t.integer "strength"
+    t.integer "endurance"
+    t.integer "integrity"
+    t.integer "patience"
+    t.integer "empathy"
+    t.integer "rating"
     t.index ["user_id"], name: "index_bios_on_user_id"
   end
 

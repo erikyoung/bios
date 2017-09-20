@@ -286,11 +286,39 @@
 
  .modal-title {
     color: black;
+    text-align: center;
+    font-size: 2.0em;
+}
+
+#exampleModalLabel {
+  text-align: center;
 }
 
 .modal-body {
   color: black;
 }
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+
 
 
 
