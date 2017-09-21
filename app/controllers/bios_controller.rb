@@ -3,7 +3,7 @@ class BiosController < ApplicationController
 
 	def index
 		@bios = Bio.all
-		@bio = Bio.new
+		
 	end
 
 	def new
@@ -15,6 +15,7 @@ class BiosController < ApplicationController
 	end
 
 	def create
+	
 		@bio = current_user.bios.create(bio_params)
 		if @bio.valid? 
 		 redirect_to root_path
@@ -27,6 +28,6 @@ class BiosController < ApplicationController
 	private
 
 	def bio_params
-		params.require(:bio).permit(:name, :age, :description, :hometown, :hobbies, :picture, :caption)
+		params.require(:bio).permit(:name, :description, :hometown, :picture, :rating)
 	end
 end
