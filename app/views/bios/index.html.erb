@@ -31,38 +31,52 @@
        <h5 class="modal-title" id="exampleModalLabel">Characteristics</h5>
   <div class="container">
     <div class="row">
-      <div class="ratings col-xs-4">
-          <%= f.label :strength %>
-        <div class="review-rating">
-          <%= f.number_field :rating %> 
-        </div>
-         <%= f.label :endurance %>
-        <div class="attribute">
-          <%= f.number_field :rating %> 
-        </div>
-         <%= f.label :integrity %>
-        <div class="attribute">
-          <%= f.number_field :rating %> 
-        </div>
-         <%= f.label :patience %>
-        <div class="attribute">
-          <%= f.number_field :rating %> 
-        </div>
-         <%= f.label :empathy %>
-        <div class="attribute">
-          <%= f.number_field :rating %> 
-        </div>
-      </div>
+
+      <span class="ratings">
+            <div class="attribute">
+              <%= f.label :strength %>
+              <%= f.number_field :rating %> 
+            </div>
+       
+            <div class="attribute">
+              <%= f.label :endurance %>
+              <%= f.number_field :rating %> 
+            </div><br />
+
+        
+             <div class="attribute">
+             <%= f.label :integrity %>
+              <%= f.number_field :rating %> 
+             </div>
+        
+            <div class="attribute">
+              <%= f.label :patience %>
+              <%= f.number_field :rating %> 
+            </div><br />
+          
+            <div class="attribute">
+              <%= f.label :empathy %>
+              <%= f.number_field :rating %> 
+            </div>
+      </span>
     </div>
   </div>
-
+</div>
+  <%= f.submit 'Add a Cool Person', class: 'btn btn-info btn-lg btn3d' %> 
       <% end %> 
- </div>
+       
+</div>
+   
+     
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
 
 
-
- <script>
-   $.('.review-rating').raty({
+   $.('.modal-body').raty({
     readOnly: true,
     score: function() {
       return $(this).attr('data-score');
@@ -73,12 +87,6 @@
    
 
  </script>
-   
-      <%= link_to 'Add a Cool Person', root_path, class: 'btn btn-info btn-lg btn3d' %> 
-    </div>
-  </div>
-</div>
-</div>
 
     
 
