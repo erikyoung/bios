@@ -2,7 +2,8 @@ class BiosController < ApplicationController
 	before_action :authenticate_user!, only: [:new, :create]
 
 	def index
-		@bios = Bio.all
+		@bios = Bio.all.paginate(page: params[:page], per_page: 2)
+
 	end
 
 	def new
