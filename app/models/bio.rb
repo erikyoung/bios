@@ -3,7 +3,7 @@ class Bio < ApplicationRecord
 	validates :age, :presence => true
 	validates :description, :presence => true
 	validates :hometown, :presence => true
-	validates :hobbies, :presence => true
+	
 
 	
 	belongs_to :user
