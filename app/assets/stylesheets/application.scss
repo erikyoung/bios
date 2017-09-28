@@ -391,6 +391,30 @@
   margin: 0 auto;
 }
 
+.pagination:before {
+  content: "\f0a8";
+    position: absolute;
+    right: 1em;
+    padding: 0 1px;
+    font-family: FontAwesome;
+    transform: translateZ(0);
+    transition-duration: 0.1s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+
+.pagination:after {
+  content: "\f0a9";
+    position: absolute;
+    right: 1em;
+    padding: 0 1px;
+    font-family: FontAwesome;
+    transform: translateZ(0);
+    transition-duration: 0.1s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+
 .pagination span, .pagination a {
     display:inline-block;
     margin: 2px 2px 2px 0;
