@@ -11,13 +11,13 @@ class BiosController < ApplicationController
 
 	def show
 		@bio = Bio.find(params[:id])
-		
+
 	end
 
 	def create
 		@bio = Bio.find_by(params[:id])
 		@bio = current_user.bios.create(bio_params)
-		if @bio.valid? 
+		if @bio.save 
 		 redirect_to root_path
 		else
 			render :new, status: :unprocessable_entity
