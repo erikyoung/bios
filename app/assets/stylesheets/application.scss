@@ -383,12 +383,28 @@
 }
 
 .pagination {
-  margin-top:10px;
-  margin-left: 30px;
-  margin-bottom:15px;
-  padding:20px;
-  font-size: 24px;
-  
+    clear:both;
+    position:relative;
+    font-size:20px;
+    
+    display: inline-flex;
+  margin: 0 auto;
+}
+
+.pagination span, .pagination a {
+    display:inline-block;
+    margin: 2px 2px 2px 0;
+    padding:6px 9px 5px 9px;
+    text-decoration:none;
+    color: #ddd;
+    background: #222;
+}
+
+.pagination .current{
+    padding:6px 9px 5px 9px;
+    font-weight: bold;
+
+    background: #0950E8;
 }
 
 
