@@ -44,26 +44,26 @@
 
        
             <div class="attribute">
-              <div id="rating-form">
+              <div id="ratings-form">
                    <span class="line-of-stars"><label class="text-left"><strong>Endurance</strong></label></span>
                 </div>
             </div><br />
 
         
              <div class="attribute">
-             <div id="rating-form">
+             <div id="rate-form">
                    <span class="line-of-stars"><label class="text-left"><strong>Integrity</strong></label></span>
                 </div>
              </div>
         
             <div class="attribute">
-              <div id="rating-form">
+              <div id="star-form">
                    <span class="line-of-stars"><label class="text-left"><strong>Patience</strong></label></span>
                 </div>
             </div><br />
           
             <div class="attribute">
-              <div id="rating-form">
+              <div id="starring-form">
                    <span class="line-of-stars"><label class="text-left"><strong>Empathy</strong></label></span>
                 </div>
             </div>
@@ -89,6 +89,38 @@
 <script>
 
   $('#rating-form').raty({
+    path: '/assets/',
+    scoreName: 'bio[rating]'
+  });
+</script>
+
+<script>
+
+  $('#starring-form').raty({
+    path: '/assets/',
+    scoreName: 'bio[rating]'
+  });
+</script>
+
+<script>
+
+  $('#rate-form').raty({
+    path: '/assets/',
+    scoreName: 'bio[rating]'
+  });
+</script>
+
+<script>
+
+  $('#star-form').raty({
+    path: '/assets/',
+    scoreName: 'bio[rating]'
+  });
+</script>
+
+<script>
+
+  $('#ratings-form').raty({
     path: '/assets/',
     scoreName: 'bio[rating]'
   });
