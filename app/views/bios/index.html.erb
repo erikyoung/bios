@@ -98,8 +98,13 @@
 $('.review-rating').raty({
       readOnly: true,
      path: '/assets/',
-    start: 3
-  });
+    score: function() {
+      return $(this).attr('data-score');
+  },
+
+  path: '/assets/'
+
+});
 
   </script>
 

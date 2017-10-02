@@ -15,10 +15,11 @@
 					
 					<p><%= @bio.description %></p> 
 					<p><%= @bio.hometown %></p> 
-					<p><%= @bio.rating %></p>
-				
 					
 				</div>
+				<div>
+              		<%= rating_star(bios.rating) %>
+            	</div>
 				<button type="button" class="btn btn-primary btn-lg">Contact Me</button>
 			</div>
 		</div>
