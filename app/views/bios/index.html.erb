@@ -36,30 +36,36 @@
     <div class="row">
 
       <span class="ratings">
-            <div class="attribute">
-              <%= f.label :strength %>
-              <%= f.number_field :rating %> 
+            <div class="attribute"> 
+                <div id="rating-form">
+                   <span class="line-of-stars"><label class="text-left"><strong>Strength</strong></label></span>
+                </div>
             </div>
+
        
             <div class="attribute">
-              <%= f.label :endurance %>
-              <%= f.number_field :rating %> 
+              <div id="rating-form">
+                   <span class="line-of-stars"><label class="text-left"><strong>Endurance</strong></label></span>
+                </div>
             </div><br />
 
         
              <div class="attribute">
-             <%= f.label :integrity %>
-              <%= f.number_field :rating %> 
+             <div id="rating-form">
+                   <span class="line-of-stars"><label class="text-left"><strong>Integrity</strong></label></span>
+                </div>
              </div>
         
             <div class="attribute">
-              <%= f.label :patience %>
-              <%= f.number_field :rating %> 
+              <div id="rating-form">
+                   <span class="line-of-stars"><label class="text-left"><strong>Patience</strong></label></span>
+                </div>
             </div><br />
           
             <div class="attribute">
-              <%= f.label :empathy %>
-              <%= f.number_field :rating %> 
+              <div id="rating-form">
+                   <span class="line-of-stars"><label class="text-left"><strong>Empathy</strong></label></span>
+                </div>
             </div>
       </span>
     </div>
@@ -82,18 +88,20 @@
 
 <script>
 
-
-   $.('.modal-body').raty({
-    readOnly: true,
-    score: function() {
-      return $(this).attr('data-score');
-    },
-    path: /assets/
-
+  $('#rating-form').raty({
+    path: '/assets/',
+    scoreName: 'bio[rating]'
   });
-   
+</script>
 
- </script>
+<script>
+$('.review-rating').raty({
+      readOnly: true,
+     path: '/assets/',
+    start: 3
+  });
+
+  </script>
 
     
 
