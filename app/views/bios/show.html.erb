@@ -18,11 +18,25 @@
 					
 				</div>
 				<div>
-              		<%= rating_star(bios.rating) %>
+              		<%= @bio.rating %>
             	</div>
 				<button type="button" class="btn btn-primary btn-lg">Contact Me</button>
 			</div>
 		</div>
+
+<script>
+$('.review-rating').raty({
+      readOnly: true,
+     path: '/assets/',
+    score: function() {
+      return $(this).attr('data-score');
+  },
+
+  path: '/assets/'
+
+});
+
+  </script>
 
 	
 
