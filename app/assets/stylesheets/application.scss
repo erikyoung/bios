@@ -428,8 +428,20 @@
 .pagination .current{
     padding:6px 9px 5px 9px;
     font-weight: bold;
-
     background: #0950E8;
+}
+
+.review-rating   {
+  color: red;
+  display: inline-block;
+  margin: 10px 10px 10px 10px;
+  padding-right: 10px 10px 10px 10px;
+  width: 33%;
+}
+
+.col-3 {
+  font-size: 24px;
+  width: 30%;
 }
 
 
