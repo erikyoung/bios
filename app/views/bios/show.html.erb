@@ -17,23 +17,23 @@
 					<p><%= @bio.hometown %></p> 
 					
 				</div>
-				<div class="review-rating">
+				<div class="review-rating" data-score="<%= bio.rating %>">
 					<p class="col-3">Strength</p>
               		<%= @bio.strength %>
             	</div>
-            	<div class="review-rating">
+            	<div class="review-rating" data-score="<%= bio.rating %>">
             		<p class="col-3">Endurance</p>
               		<%= @bio.endurance %>
             	</div>
-            	<div class="review-rating">
+            	<div class="review-rating" data-score="<%= bio.rating %>">
             		<p class="col-3">Integrity</p>
               		<%= @bio.integrity %>
             	</div>
-            	<div class="review-rating">
+            	<div class="review-rating" data-score="<%= bio.rating %>">
             		<p class="col-3">Patience</p>
               		<%= @bio.patience %>
             	</div>
-            	<div class="review-rating">
+            	<div class="review-rating" data-score="<%= bio.rating %>">
             		<p class="col-3">Empathy</p>
               		<%= @bio.empathy %>
             	</div>
@@ -43,17 +43,16 @@
 
 <script>
 $('.review-rating').raty({
+      path: '/assets/',
       readOnly: true,
-     path: '/assets/',
-    score: function() {
-      return $(this).attr('data-score');
-  },
-
-  path: '/assets/'
-
-});
+      score: function() {
+            return $(this).attr('data-score');
+    }
+  });
 
   </script>
+
+
 
 	
 
