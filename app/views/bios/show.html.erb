@@ -39,13 +39,17 @@
             	</div>
 
          
-             <%= simple_form_for @comment url: bio_comments_path(@bio) do |f| %>
+             <%= simple_form_for @comment, url: bio_comments_path(@bio) do |f| %>
                <%= f.input :message %> 
                <%= f.submit "Add Comment", class: 'btn btn-primary' %>
              <% end %> 
 				<button type="button" class="btn btn-primary btn-lg">Contact Me</button>
 			</div>
 		</div>
+
+    <% @bio.comments.each do |comment| %>
+      <%= comment.message %> 
+    <% end %> 
 
 
 <script>

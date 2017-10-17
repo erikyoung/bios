@@ -11,8 +11,8 @@ class CommentsController < ApplicationController
 
 	def create
 		@bio = Bio.find(params[:bio_id])
-		@bio.commments.create(comment_params.merge(user: current_user)
-		redirect_to bio_path(@path)
+		@bio.comments.create(comment_params.merge(user: current_user))
+		redirect_to bio_path(@bio)
 	end
 
 	private
