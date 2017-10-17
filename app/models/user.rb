@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
    has_many :bios, dependent: :destroy
    has_many :photos
+   has_many :comments
 end
 
 

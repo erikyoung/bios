@@ -12,6 +12,7 @@ class BiosController < ApplicationController
 
 	def show
 		@bio = Bio.find(params[:id])
+		@comment = Comment.new
 
 	end
 

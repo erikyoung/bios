@@ -33,13 +33,20 @@
             		<p class="col-3">Patience</p>
               		<%= @bio.patience %>
             	</div>
-            	<div class="reviewy-rating" data-score="<%= @bio.rating %>">
+            	<div class="review-rating" data-score="<%= @bio.rating %>">
             		<p class="col-3">Empathy</p>
               		<%= @bio.empathy %>
             	</div>
+
+         
+             <%= simple_form_for @comment url: bio_comments_path(@bio) do |f| %>
+               <%= f.input :message %> 
+               <%= f.submit "Add Comment", class: 'btn btn-primary' %>
+             <% end %> 
 				<button type="button" class="btn btn-primary btn-lg">Contact Me</button>
 			</div>
 		</div>
+
 
 <script>
 $('.review-rating').raty({
@@ -54,15 +61,7 @@ $('.review-rating').raty({
 
 
 <script>
-$('.reviewy-rating').raty({
-      path: '/assets/',
-      readOnly: true,
-      score: function() {
-            return $(this).attr('data-score');
-    }
-  });
 
-  </script>
 
   
 
