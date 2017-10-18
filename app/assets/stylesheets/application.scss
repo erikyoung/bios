@@ -279,9 +279,9 @@
 
  .btn-info {
   text-align: center;
-  display:block; /* change this from inline-block */
-    width:20%; /* setting the width */
-    margin:0 auto; /* this will center  it */
+  display:block; 
+    width:25%; 
+    margin:0 auto; 
     position:relative;
  }
 
@@ -444,12 +444,7 @@
   width: 30%;
 }
 
-.comment-display >  blockquote {
-  width: 50%;
-  height: 70px;
-  background: url("white_texture.png");
-  margin-top: 50px;
-}
+
 
 .comment-h1 {
   margin-top: 30px;
@@ -461,6 +456,30 @@
   padding: 15px 15px 15px 15px;
   font-size: 20px;
   color: #ff3333;
+}
+
+blockquote {
+  
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  background: url("white_texture.png");
+  
+}
+
+blockquote:before {
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  
+}
+
+.btn-large  {
+  background-color: #ff3333;
+  
+}
+
+.btn-large {
+  color: #fff;
 }
 
 

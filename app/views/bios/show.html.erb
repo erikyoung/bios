@@ -43,20 +43,24 @@
                <%= f.input :message, placeholder: "Add a message here", label: false  %> 
                <%= f.submit "Add Comment", class: 'btn btn-primary' %>
              <% end %> <br />
+         
             <div class="comment-display">
               <h1 class="comment-h1">Here's What People Have Said</h1>
               <% @bio.comments.each do |comment| %>
-              <div class="new-comment">
                 <blockquote>
-                      <%= comment.message %> 
+                   <div class="new-comment">
+                        <%= comment.message %> 
+                   </div>
                 </blockquote>
-             </div>
+                <% end %>
+                <button type="button" class="btn btn-primary">
+                  <p>Contact Me</p>
+                </button>
+            </div>
+            
 
-            </div><br /><br />
+        </div>
 
-         </div>
-          <% end %> 
-				<button type="button" class="btn btn-primary btn-lg">Contact Me</button>
 			</div>
 		</div>
 
