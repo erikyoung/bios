@@ -38,18 +38,27 @@
               		<%= @bio.empathy %>
             	</div>
 
-         
-             <%= simple_form_for @comment, url: bio_comments_path(@bio) do |f| %>
-               <%= f.input :message %> 
+         <div class="col-xs-10 col-xs-offset-1">
+             <%= simple_form_for @comment, url: bio_comments_path(@bio) do |f| %><br />
+               <%= f.input :message, placeholder: "Add a message here", label: false  %> 
                <%= f.submit "Add Comment", class: 'btn btn-primary' %>
-             <% end %> 
+             <% end %> <br />
+            <div class="comment-display">
+              <h1 class="comment-h1">Here's What People Have Said</h1>
+              <blockquote>
+                <div class="new-comment">
+                 <% @bio.comments.each do |comment| %>
+                    <%= comment.message %> 
+                 <% end %> 
+                </div>
+              </blockquote>
+            </div><br /><br />
+         </div>
 				<button type="button" class="btn btn-primary btn-lg">Contact Me</button>
 			</div>
 		</div>
 
-    <% @bio.comments.each do |comment| %>
-      <%= comment.message %> 
-    <% end %> 
+    
 
 
 <script>
