@@ -45,15 +45,17 @@
              <% end %> <br />
             <div class="comment-display">
               <h1 class="comment-h1">Here's What People Have Said</h1>
-              <blockquote>
-                <div class="new-comment">
-                 <% @bio.comments.each do |comment| %>
-                    <%= comment.message %> 
-                 <% end %> 
-                </div>
-              </blockquote>
+              <% @bio.comments.each do |comment| %>
+              <div class="new-comment">
+                <blockquote>
+                      <%= comment.message %> 
+                </blockquote>
+             </div>
+
             </div><br /><br />
+
          </div>
+          <% end %> 
 				<button type="button" class="btn btn-primary btn-lg">Contact Me</button>
 			</div>
 		</div>
